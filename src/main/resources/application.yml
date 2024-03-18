@@ -1,0 +1,30 @@
+server:
+  port: 8181
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/medishop
+    username: root
+    password: root
+  jpa:
+    database: MYSQL
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    generate-ddl: true
+      
+#    # H2 Database Configuration
+#spring.datasource.url=jdbc:h2:mem:testdb
+#spring.datasource.username=sa
+#spring.datasource.password=sa
+#spring.datasource.driver-class-name=org.h2.Driver
+#
+## Hibernate Configuration
+#spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+#spring.jpa.hibernate.ddl-auto=create-drop
+#
+#server.port=8183
+    
+      
+  
